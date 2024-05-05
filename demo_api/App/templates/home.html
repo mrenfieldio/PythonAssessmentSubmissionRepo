@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<title>Github API Integration Page</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Github API Integration Page</h1>
+    <form action="{% url 'search_repositories' %}" method="GET" id="searchForm">
+        <input type="text" name="q" placeholder="Search repositories..." id="searchInput">
+        <input type="submit" value="Search" >
+    </form>
+</div>
+</body>
+</html>

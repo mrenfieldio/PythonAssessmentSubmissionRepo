@@ -1,0 +1,21 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error Page</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    
+</head>
+<body>
+    <div class="error-container">
+        <div class="image-container">
+            <img src="https://www.example.com/error-image.png" alt="Error Image">
+        </div>
+        <h1>Oops! Something went wrong.</h1>
+        <p>{{ error_message }}&nbsp;&nbsp; <a href="{% url 'home' %}">Go Back</a> </p>
+      
+    </div>
+</body>
+</html>
+
+
